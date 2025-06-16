@@ -81,6 +81,13 @@ body {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
 }
 
+#play-text{
+    font-family: "Delius", sans-serif;
+    font-size: clamp(12px, 2.2vw, 18px);
+    font-weight: 700;
+    text-shadow: 2px 1px 9px rgba(0, 0, 0, 0.7);
+}
+
 .artist-info {
   flex-grow: 1;
   min-width: 0; /* Prevent flex item overflow */
