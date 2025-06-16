@@ -42,7 +42,7 @@ body {
 
 /* Profile Section */
 .profile {
-  background-image: url("assets/surbhi12.jpg");
+  /* background-image: url("assets/surbhi12.jpg"); */
   background-position:top 10%;
   background-size: cover;
   background-repeat: no-repeat;
