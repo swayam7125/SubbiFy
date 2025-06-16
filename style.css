@@ -25,8 +25,6 @@ body {
   overflow-x: hidden;
   min-height: 100vh;
   font-family: "Delius", sans-serif;
-  /* font-family: "Poppins", sans-serif; */
-
 }
 
 .container {
@@ -42,12 +40,11 @@ body {
 
 /* Profile Section */
 .profile {
-  background-image: url("assets/surbhi12.jpg");
-  background-position:top 10%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  background-size: 100% 100%;
+  background-position: 0px 0px;
+  background-image: linear-gradient(109deg,
+      #212020ff 1%,
+      #908a8aff 100%);
   color: white;
   width: 100%;
   min-height: clamp(150px, 20vh, 220px);
@@ -59,11 +56,10 @@ body {
 
 .profile-image {
   flex-shrink: 0;
-  width: clamp(
-    70px,
-    12vw,
-    100px
-  ); /* Reduced from 15vw to 12vw, and max from 130px to 100px */
+  width: clamp(70px,
+      12vw,
+      100px);
+  /* Reduced from 15vw to 12vw, and max from 130px to 100px */
   height: clamp(70px, 12vw, 100px);
   border-radius: 50%;
   display: flex;
@@ -81,26 +77,23 @@ body {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
 }
 
-#play-text{
-    font-family: "Delius", sans-serif;
-    font-size: clamp(12px, 2.2vw, 18px);
-    font-weight: 700;
-    text-shadow: 2px 1px 9px rgba(0, 0, 0, 0.7);
+#play-text {
+  font-family: "Delius", sans-serif;
+  font-size: clamp(12px, 2.2vw, 18px);
+  font-weight: 700;
+  text-shadow: 2px 1px 9px rgba(0, 0, 0, 0.7);
 }
 
 .artist-info {
   flex-grow: 1;
-  min-width: 0; /* Prevent flex item overflow */
+  min-width: 0;
+  /* Prevent flex item overflow */
 }
 
 .artist-name {
-  font-size: clamp(
-    20px,
-    5vw,
-    32px
-  ); /* Reduced from 6vw to 5vw, and max from 38px to 32px */
+  font-size: clamp(20px, 5vw, 32px);
   font-weight: 700;
-  margin-bottom: clamp(10px, 2.5vw, 16px); /* Reduced margin */
+  margin-bottom: clamp(10px, 2.5vw, 16px);
   color: #ffffff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   word-wrap: break-word;
@@ -110,16 +103,19 @@ body {
   background: #1db954;
   color: white;
   border: none;
-  padding: clamp(6px, 1.5vw, 10px) clamp(16px, 4vw, 24px); /* Reduced padding */
+  padding: clamp(6px, 1.5vw, 10px) clamp(16px, 4vw, 24px);
+  /* Reduced padding */
   border-radius: 50px;
-  font-size: clamp(13px, 2.2vw, 15px); /* Slightly smaller font */
+  font-size: clamp(13px, 2.2vw, 15px);
+  /* Slightly smaller font */
   font-weight: 600;
-  cursor: pointer;  
+  cursor: pointer;
   transition: all 0.2s ease;
   display: flex;
   align-items: center;
   gap: 8px;
-  min-height: 40px; /* Touch-friendly minimum */
+  min-height: 40px;
+  /* Touch-friendly minimum */
   min-width: 90px;
 }
 
@@ -198,7 +194,7 @@ body {
   flex-shrink: 0;
 }
 
-.songitem > span:first-of-type {
+.songitem>span:first-of-type {
   flex: 1;
   text-align: left;
   font-weight: 500;
@@ -381,13 +377,17 @@ body {
   .profile {
     flex-direction: column-reverse;
     text-align: center;
-    gap: 10px; /* Reduced from 15px */
-    padding: 15px 12px; /* Reduced padding */
-    min-height: 120px; /* Smaller on mobile */
+    gap: 10px;
+    /* Reduced from 15px */
+    padding: 15px 12px;
+    /* Reduced padding */
+    min-height: 120px;
+    /* Smaller on mobile */
   }
 
   .profile-image {
-    width: 60px; /* Smaller on mobile */
+    width: 60px;
+    /* Smaller on mobile */
     height: 60px;
   }
 
@@ -396,7 +396,8 @@ body {
   }
 
   .artist-name {
-    font-size: 18px; /* Smaller on mobile */
+    font-size: 18px;
+    /* Smaller on mobile */
     margin-bottom: 8px;
   }
 
@@ -452,8 +453,10 @@ body {
   }
 
   .profile {
-    padding: 18px 16px; /* Reduced padding for tablets */
-    min-height: 180px; /* Smaller on tablets */
+    padding: 18px 16px;
+    /* Reduced padding for tablets */
+    min-height: 180px;
+    /* Smaller on tablets */
   }
 }
 
@@ -480,7 +483,8 @@ body {
 }
 
 /* High DPI Screens */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
   .profile-image img {
     border-width: 2px;
   }
