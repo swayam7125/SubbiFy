@@ -3,75 +3,75 @@ document.addEventListener('DOMContentLoaded', function () {
     const songs = [
         {
             name: "Tune Kya Kiya",
-            src: "songs/Tune_Kya_Kiya.mp3",
+            src: "Tune_Kya_Kiya.mp3",
             duration: "01:30",
-            cover: "assets/surbhi1.jpg"
+            cover: "surbhi1.jpg"
         },
         {
             name: "vhalam aavo ne",
-            src: "songs/vhalam_aavo_ne.mp3",
+            src: "vhalam_aavo_ne.mp3",
             duration: "01:10",
-            cover: "assets/surbhi2.jpg"
+            cover: "surbhi2.jpg"
         },
         {
             name: "Bade acche lagte he",
-            src: "songs/Bade_acche_lagte_he.mp3",
+            src: "Bade_acche_lagte_he.mp3",
             duration: "01:20",
-            cover: "assets/surbhi3.jpg"
+            cover: "surbhi3.jpg"
         },
         {
             name: "Dagabaaz",
-            src: "songs/dagabaaz.mp3",
+            src: "dagabaaz.mp3",
             duration: "01:03",
-            cover: "assets/surbhi4.jpg"
+            cover: "surbhi6.jpg"
         },
         {
             name: "Ham kya kare",
-            src: "songs/Ham_kya_kare.mp3",
+            src: "Ham_kya_kare.mp3",
             duration: "01:21",
-            cover: "assets/surbhi5.jpg"
+            cover: "surbhi5.jpg"
         },
         {
             name: "Jab Tak",
-            src: "songs/Jab_Tak.mp3",
+            src: "Jab_Tak.mp3",
             duration: "01:14",
-            cover: "assets/surbhi6.jpg"
+            cover: "surbhi6.jpg"
         },
         {
             name: "Lag Jaa Gale",
-            src: "songs/Lag_Jaa_Gale.mp3",
+            src: "Lag_Jaa_Gale.mp3",
             duration: "01:21",
-            cover: "assets/surbhi10.jpg"
+            cover: "surbhi10.jpg"
         },
         {
             name: "Vhal no dariyo",
-            src: "songs/Vhal_no_dariyo.mp3",
+            src: "Vhal_no_dariyo.mp3",
             duration: "01:13",
-            cover: "assets/surbhi11.jpg"
+            cover: "surbhi11.jpg"
         },
         {
             name: "Tum Jo Aaye",
-            src: "songs/Tum_Jo_Aaye.mp3",
+            src: "Tum_Jo_Aaye.mp3",
             duration: "01:06",
-            cover: "assets/surbhi9.jpg"
+            cover: "surbhi9.jpg"
         },
         {
             name: "Tere Sang Yaara",
-            src: "songs/Tere_Sang_Yaara.mp3",
+            src: "Tere_Sang_Yaara.mp3",
             duration: "04:30",
-            cover: "assets/surbhi7.jpg"
+            cover: "surbhi7.jpg"
         },
         {
             name: "Jugraafiya",
-            src: "songs/Jugraafiya.mp3",
+            src: "Jugraafiya.mp3",
             duration: "01:03",
-            cover: "assets/surbhi8.jpg"
+            cover: "surbhi8.jpg"
         },
         {
             name: "Maand",
-            src: "songs/Maand.mp3",
+            src: "Maand.mp3",
             duration: "00:17",
-            cover: "assets/surbhi12.jpg"
+            cover: "surbhi12.jpg"
         }
     ];
 
@@ -226,10 +226,10 @@ document.addEventListener('DOMContentLoaded', function () {
     // Update play/pause button icon in bottom controls
     function updatePlayButtonIcon(playing) {
         if (playing) {
-            playBtn.src = "assets/pause_circle.svg";
+            playBtn.src = "pause_circle.svg";
             playBtn.alt = "Pause song";
         } else {
-            playBtn.src = "assets/play_circle.svg";
+            playBtn.src = "play_circle.svg";
             playBtn.alt = "Play song";
         }
     }
