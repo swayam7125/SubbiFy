@@ -60,6 +60,18 @@ document.addEventListener('DOMContentLoaded', function () {
             src: "songs/Tere_Sang_Yaara.mp3",
             duration: "04:30",
             cover: "assets/surbhi7.jpg"
+        },
+        {
+            name: "Jugraafiya",
+            src: "songs/Jugraafiya.mp3",
+            duration: "01:03",
+            cover: "assets/surbhi8.jpg"
+        },
+        {
+            name: "Maand",
+            src: "songs/Maand.mp3",
+            duration: "00:17",
+            cover: "assets/surbhi12.jpg"
         }
     ];
 
