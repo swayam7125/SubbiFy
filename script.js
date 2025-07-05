@@ -3,73 +3,73 @@ document.addEventListener('DOMContentLoaded', function () {
     const songs = [
         {
             name: "Tune Kya Kiya",
-            src: "Tune_Kya_Kiya.mp3",
+            src: "./songs/Tune_Kya_Kiya.mp3",
             duration: "01:30",
             cover: "surbhi1.jpg"
         },
         {
             name: "vhalam aavo ne",
-            src: "vhalam_aavo_ne.mp3",
+            src: "./songs/vhalam_aavo_ne.mp3",
             duration: "01:10",
             cover: "surbhi2.jpg"
         },
         {
             name: "Bade acche lagte he",
-            src: "Bade_acche_lagte_he.mp3",
+            src: "./songs/Bade_acche_lagte_he.mp3",
             duration: "01:20",
-            cover: "surbhi3.jpg"
+            cover: "surbhi13.jpg"
         },
         {
             name: "Dagabaaz",
-            src: "dagabaaz.mp3",
+            src: "./songs/dagabaaz.mp3",
             duration: "01:03",
             cover: "surbhi6.jpg"
         },
         {
-            name: "Ham kya kare",
-            src: "Ham_kya_kare.mp3",
+            name: "Ye dil tum bin",
+            src: "./songs/Ye_dil_tum_bin.mp3",
             duration: "01:21",
             cover: "surbhi5.jpg"
         },
         {
             name: "Jab Tak",
-            src: "Jab_Tak.mp3",
+            src: "./songs/Jab_Tak.mp3",
             duration: "01:14",
             cover: "surbhi6.jpg"
         },
         {
             name: "Lag Jaa Gale",
-            src: "Lag_Jaa_Gale.mp3",
+            src: "./songs/Lag_Jaa_Gale.mp3",
             duration: "01:21",
             cover: "surbhi10.jpg"
         },
         {
             name: "Vhal no dariyo",
-            src: "Vhal_no_dariyo.mp3",
+            src: "./songs/Vhal_no_dariyo.mp3",
             duration: "01:13",
             cover: "surbhi11.jpg"
         },
         {
             name: "Tum Jo Aaye",
-            src: "Tum_Jo_Aaye.mp3",
+            src: "./songs/Tum_Jo_Aaye.mp3",
             duration: "01:06",
             cover: "surbhi9.jpg"
         },
         {
             name: "Tere Sang Yaara",
-            src: "Tere_Sang_Yaara.mp3",
+            src: "./songs/Tere_Sang_Yaara.mp3",
             duration: "04:30",
             cover: "surbhi7.jpg"
         },
         {
             name: "Jugraafiya",
-            src: "Jugraafiya.mp3",
+            src: "./songs/Jugraafiya.mp3",
             duration: "01:03",
-            cover: "surbhi8.jpg"
+            cover: "surbhi13.jpg"
         },
         {
             name: "Maand",
-            src: "Maand.mp3",
+            src: "./songs/Maand.mp3",
             duration: "00:17",
             cover: "surbhi12.jpg"
         }
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function () {
         updateCurrentSongDisplay();
         
         // Auto-scroll to current song if requested
-        if (shouldScroll) {
+        if (shouldScroll) {         
             // Add a small delay to ensure DOM updates are complete
             setTimeout(() => {
                 console.log('Triggering auto-scroll for song:', song.name);
@@ -226,10 +226,10 @@ document.addEventListener('DOMContentLoaded', function () {
     // Update play/pause button icon in bottom controls
     function updatePlayButtonIcon(playing) {
         if (playing) {
-            playBtn.src = "pause_circle.svg";
+            playBtn.src = "./assets/pause_circle.svg";
             playBtn.alt = "Pause song";
         } else {
-            playBtn.src = "play_circle.svg";
+            playBtn.src = "./assets/play_circle.svg";
             playBtn.alt = "Play song";
         }
     }

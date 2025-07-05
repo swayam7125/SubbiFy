@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Delius:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+
 
 * {
   margin: 0;
@@ -15,6 +18,8 @@
 
 html {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -24,7 +29,10 @@ body {
   justify-content: center;
   overflow-x: hidden;
   min-height: 100vh;
+  box-sizing: border-box;
   font-family: "Delius", sans-serif;
+  /* font-family: "National Park", sans-serif; */
+  /* font-family: "Roboto", sans-serif; */
 }
 
 .container {
@@ -34,8 +42,8 @@ body {
 }
 
 .bg {
-  background-image: url(bg4op30.jpg);
-  background-size: cover;
+  background-image: url(./assets/bg4op30.jpg);
+  background-size: contain;
 }
 
 /* Profile Section */
@@ -249,6 +257,7 @@ body {
   position: sticky;
   bottom: 0;
   z-index: 10;
+  margin-bottom: 0;
 }
 
 .time-display {
