@@ -258,11 +258,10 @@ document.addEventListener('DOMContentLoaded', function () {
             isSeeking = true;
             const seekTime = (progressBar.value / 100) * audioPlayer.duration;
             currentTimeEl.textContent = formatTime(seekTime);
+            audioPlayer.currentTime = seekTime;
         });
 
         progressBar.addEventListener('change', () => {
-            const seekTime = (progressBar.value / 100) * audioPlayer.duration;
-            audioPlayer.currentTime = seekTime;
             isSeeking = false;
         });
     }
