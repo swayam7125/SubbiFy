@@ -2,78 +2,80 @@ document.addEventListener('DOMContentLoaded', function () {
     // Song data
     const songs = [
         {
-            name: "Tune Kya Kiya",
+            name: "Tune_kya_kiya",
             src: "./songs/Tune_Kya_Kiya.mp3",
             duration: "01:30",
-            cover: "surbhi1.jpg"
+            cover: "./assets/surbhi1.jpg"
         },
         {
             name: "vhalam aavo ne",
             src: "./songs/vhalam_aavo_ne.mp3",
             duration: "01:10",
-            cover: "surbhi2.jpg"
+            cover: "./assets/surbhi2.jpg"
         },
         {
             name: "Bade acche lagte he",
             src: "./songs/Bade_acche_lagte_he.mp3",
             duration: "01:20",
-            cover: "surbhi13.jpg"
+            cover: "./assets/surbhi13.jpg"
         },
         {
             name: "Dagabaaz",
             src: "./songs/dagabaaz.mp3",
             duration: "01:03",
-            cover: "surbhi6.jpg"
+            cover: "./assets/surbhi6.jpg"
         },
         {
             name: "Ye dil tum bin",
             src: "./songs/Ye_dil_tum_bin.mp3",
             duration: "01:21",
-            cover: "surbhi5.jpg"
+            cover: "./assets/surbhi5.jpg"
         },
         {
             name: "Jab Tak",
             src: "./songs/Jab_Tak.mp3",
             duration: "01:14",
-            cover: "surbhi6.jpg"
+            cover: "./assets/surbhi6.jpg"
         },
         {
             name: "Lag Jaa Gale",
             src: "./songs/Lag_Jaa_Gale.mp3",
             duration: "01:21",
-            cover: "surbhi10.jpg"
+            cover: "./assets/surbhi10.jpg"
         },
         {
             name: "Vhal no dariyo",
             src: "./songs/Vhal_no_dariyo.mp3",
             duration: "01:13",
-            cover: "surbhi11.jpg"
+            cover: "./assets/surbhi11.jpg"
         },
         {
             name: "Tum Jo Aaye",
             src: "./songs/Tum_Jo_Aaye.mp3",
             duration: "01:06",
-            cover: "surbhi9.jpg"
+            cover: "./assets/surbhi9.jpg"
         },
         {
             name: "Tere Sang Yaara",
             src: "./songs/Tere_Sang_Yaara.mp3",
             duration: "04:30",
-            cover: "surbhi7.jpg"
+            cover: "./assets/surbhi7.jpg"
         },
         {
             name: "Jugraafiya",
             src: "./songs/Jugraafiya.mp3",
             duration: "01:03",
-            cover: "surbhi13.jpg"
+            cover: "./assets/surbhi13.jpg"
         },
         {
             name: "Maand",
             src: "./songs/Maand.mp3",
             duration: "00:17",
-            cover: "surbhi12.jpg"
+            cover: "./assets/surbhi12.jpg"
         }
     ];
+
+    console.log(songs[0]);
 
     // Audio player elements
     const audioPlayer = document.getElementById('audioPlayer');
