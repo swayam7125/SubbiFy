@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const songs = [
         {
             name: "Tune_kya_kiya",
-            src: "./songs/Tune_Kya_Kiya.mp3",
+            src: "./songs/Tune_kya_kiya.mp3",
             duration: "01:30",
             cover: "./assets/surbhi1.jpg"
         },
