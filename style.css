@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Delius:wght@400;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap");
 
 * {
   margin: 0;
@@ -22,7 +22,14 @@ html {
 }
 
 body {
-  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 25%, #fecfef 50%, #a8edea 75%, #fed6e3 100%);
+  background: linear-gradient(
+    135deg,
+    #ff9a9e 0%,
+    #fecfef 25%,
+    #fecfef 50%,
+    #a8edea 75%,
+    #fed6e3 100%
+  );
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
@@ -63,9 +70,15 @@ body {
 }
 
 @keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .profile-image {
@@ -74,7 +87,7 @@ body {
   height: clamp(60px, 10vw, 80px);
   border-radius: 50%;
   display: flex;
-  align-items: center;  
+  align-items: center;
   justify-content: center;
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
@@ -169,7 +182,7 @@ body {
   min-height: clamp(60px, 8vw, 70px);
   font-size: clamp(14px, 2.5vw, 18px);
   display: flex;
-  background: rgba(255, 255, 255, 0.60);
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
   color: #000000;
   width: 100%;
@@ -215,7 +228,7 @@ body {
   border: 2px solid rgba(255, 255, 255, 0.8);
 }
 
-.songitem>span:first-of-type {
+.songitem > span:first-of-type {
   flex: 1;
   text-align: left;
   font-weight: 600;
@@ -428,70 +441,45 @@ body {
 /* Mobile Specific Adjustments */
 @media (max-width: 480px) {
   .profile {
-    flex-direction: column-reverse;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    gap: 8px;
-    padding: 12px 10px;
-    min-height: 90px;
+    gap: 12px;
+    padding: 15px 10px;
+    min-height: 160px; /* Increased height for better spacing */
   }
 
   .profile-image {
-    width: 45px;
-    height: 45px;
+    width: 60px; /* Slightly larger image */
+    height: 60px;
+    margin: 0 auto; /* Center the image */
   }
 
   .artist-info {
-    order: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center children horizontally */
+    gap: 10px;
+    width: 100%;
   }
 
   .artist-name {
-    font-size: 16px;
-    margin-bottom: 6px;
+    font-size: 18px;
+    margin: 0;
+    text-align: center;
   }
 
   .play-button {
-    padding: 4px 12px;
-    font-size: 10px;
-    min-height: 28px;
-    min-width: 60px;
+    padding: 6px 15px;
+    font-size: 12px;
+    min-height: 32px;
+    min-width: 80px;
+    margin: 0 auto; /* Center the button */
   }
 
-  .song {
-    margin: auto 15px;
-  }
-
-  .songitem {
-    padding: 10px 8px;
-  }
-
-  .songitem .no {
-    display: none;
-  }
-
-  .timestamp {
-    color: #666;
-    flex-direction: column;
-    gap: 5px;
-    font-size: 11px;
-  }
-
-  .songinfo {
-    position: static;
-    transform: none;
-    justify-content: center;
-    max-width: none;
-    order: -1;
-    margin-bottom: 5px;
-  }
-
-  .bottom {
-    gap: 6px;
-    padding: 6px 4px;
-    min-height: 55px;
-  }
-
-  .icon {
-    gap: 20px;
+  .song{
+    margin: auto 10px;
   }
 }
 
@@ -530,8 +518,7 @@ body {
 }
 
 /* High DPI Screens */
-@media (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .profile-image img {
     border-width: 3px;
   }
