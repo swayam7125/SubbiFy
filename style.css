@@ -41,7 +41,7 @@ body {
 }
 
 .bg {
-  background-image: url(../assets/bg4op30.jpg);
+  background-image: url(./assets/bg4op30.jpg);
   background-size: contain;
   /* background-blend-mode: overlay; */
   background-color: rgba(255, 255, 255, 0.7);
