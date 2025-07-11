@@ -8,10 +8,16 @@ document.addEventListener('DOMContentLoaded', function () {
             cover: "./assets/surbhi1.jpg"
         },
         {
-            name: "vhalam aavo ne",
+            name: "Vhalam aavo ne",
             src: "./songs/vhalam_aavo_ne.mp3",
             duration: "01:10",
             cover: "./assets/surbhi2.jpg"
+        },
+        {
+            name: "Jugraafiya",
+            src: "./songs/Jugraafiya.mp3",
+            duration: "01:03",
+            cover: "./assets/surbhi4.jpg"
         },
         {
             name: "Bade acche lagte he",
@@ -26,6 +32,12 @@ document.addEventListener('DOMContentLoaded', function () {
             cover: "./assets/surbhi6.jpg"
         },
         {
+            name: "Tum Jo Aaye",
+            src: "./songs/Tum_Jo_Aaye.mp3",
+            duration: "01:06",
+            cover: "./assets/surbhi9.jpg"
+        },
+        {
             name: "Ye dil tum bin",
             src: "./songs/Ye_dil_tum_bin.mp3",
             duration: "01:21",
@@ -35,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
             name: "Jab Tak",
             src: "./songs/Jab_Tak.mp3",
             duration: "01:14",
-            cover: "./assets/surbhi6.jpg"
+            cover: "./assets/surbhi4.jpg"
         },
         {
             name: "Lag Jaa Gale",
@@ -50,22 +62,10 @@ document.addEventListener('DOMContentLoaded', function () {
             cover: "./assets/surbhi11.jpg"
         },
         {
-            name: "Tum Jo Aaye",
-            src: "./songs/Tum_Jo_Aaye.mp3",
-            duration: "01:06",
-            cover: "./assets/surbhi9.jpg"
-        },
-        {
             name: "Tere Sang Yaara",
             src: "./songs/Tere_Sang_Yaara.mp3",
             duration: "04:30",
             cover: "./assets/surbhi7.jpg"
-        },
-        {
-            name: "Jugraafiya",
-            src: "./songs/Jugraafiya.mp3",
-            duration: "01:03",
-            cover: "./assets/surbhi13.jpg"
         },
         {
             name: "Maand",
@@ -180,9 +180,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Initialize player
-    function initPlayer() {
-        loadSong(currentSongIndex, false); // Don't scroll on initial load
-        updateCurrentSongDisplay();
+     function initPlayer() {
+        currentSongName.textContent = '';
+        currentSongImg.src = '';
+        currentSongImg.style.opacity = '0.0';
+
+        audioPlayer.src = '';
+
+        // updateCurrentSongDisplay();
         setupEventListeners();
     }
 
